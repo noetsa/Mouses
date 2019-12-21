@@ -1,0 +1,1220 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://noellinetsafack-en.blogspot.com/ontologies/mouses.owl#"
+     xml:base="https://noellinetsafack-en.blogspot.com/ontologies/mouses.owl"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:ns="http://creativecommons.org/ns#"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:doap="http://usefulinc.com/ns/doap#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:mamo="http://identifiers.org/mamo#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+     xmlns:oboe-core="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#">
+    <owl:Ontology rdf:about="https://noellinetsafack-en.blogspot.com/ontologies/mouses.owl">
+        <owl:imports rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/stato.owl"/>
+        <ns:license>CC 4.0 BY  https://creativecommons.org/licenses/by/4.0/ 5Creative Commons with attribution)
+
+This ontology imports other ontlogies that require attribution:
+
+--------------------
+BFO: code: new BSD  https://opensource.org/licenses/BSD-3-Clause   content: CC 4.0 BY  https://creativecommons.org/licenses/by/4.0/
+https://basic-formal-ontology.org/
+
+The theory behind BFO was developed first by Barry Smith and Pierre Grenon and presented in a series of publications.
+
+Since then important contributions to BFO have been made by many people, including:
+
+Mathias Brochhausen
+Werner Ceusters
+Melanie Courtot
+Randall Dipert
+Janna Hastings
+Chris Mungall
+Darren Natale
+Fabian Neuhaus
+James A. Overton
+Bjoern Peters
+Ron Rudnicki
+Alan Ruttenberg
+Stefan Schulz
+Selja Seppälä
+Holger Stenzhorn
+Jie Zheng
+
+---------
+STATO: CC 3.0 BY https://creativecommons.org/licenses/by/3.0/
+http://stato-ontology.org/
+
+Creators:
+Orlaith Burke
+Philippe Rocca-Serra (http://orcid.org/0000-0001-9853-5668)
+Alejandra Gonzalez-Beltran (http://orcid.org/0000-0003-3499-8262)
+Susanna-Assunta Sansone
+
+Contributors:
+Chris Mungall (http://orcid.org/0000-0002-6601-2165)
+Camille Maumet (http://orcid.org/0000-0002-6290-553X)
+Thomas Nichols (http://orcid.org/0000-0002-4516-5103)
+Hanna Cwiek (https://orcid.org/0000-0001-9113-567X)
+Nolan Nichols (http://orcid.org/0000-0003-1099-3328)
+
+-----------------------
+MAMO: artistic license 2.0 https://www.perlfoundation.org/artistic-license-20.html
+https://sourceforge.net/p/mamo-ontology/_members/
+
+-----------------------
+OBOE: CC BY https://creativecommons.org/licenses/by/3.0/
+http://agroportal.lirmm.fr/ontologies/OBOE
+
+Please cite OBOE Ontology as:
+
+Mark Schildhauer, Matthew B. Jones, Shawn Bowers, Joshua Madin, Sergeui Krivov, Deana Pennington, Ferdinando Villa, Benjamin Leinfelder, Christopher Jones, and Margaret O&apos;Brien. 2016. OBOE: the Extensible Observation Ontology, version 1.2. KNB Data Repository. doi:10.5063/F1125R0F
+
+This software was developed with support of multiple projects at the National Center for Ecological Analysis and Synthesis (NCEAS), including grants from the National Science Foundation: SEEK (0225676) Semtools (0743429), SONet (0753144), and DataONE (1430508).
+
+The original publication describing the OBOE concept is:
+
+Madin, J., S. Bowers, M. Schildhauer, S. Krivov, D. Pennington, and F. Villa. 2007. An ontology for describing and synthesizing ecological observation data. Ecological Informatics 2:279–296. doi:10.1016/j.ecoinf.2007.05.004
+---------------------------</ns:license>
+        <obo:IAO_0000412>BFO: code: new BSD  https://opensource.org/licenses/BSD-3-Clause   content: CC 4.0 BY  https://creativecommons.org/licenses/by/4.0/
+STATO: CC 3.0 BY https://creativecommons.org/licenses/by/3.0/
+MAMO: artistic license 2.0 https://www.perlfoundation.org/artistic-license-20.html
+OBOE: CC BY https://creativecommons.org/licenses/by/3.0/</obo:IAO_0000412>
+        <dc:creator>Noelline TSAFACK (https://orcid.org/0000-0003-3154-6295)</dc:creator>
+        <dc:description xml:lang="en">MOUSES is an ontology for describing statistical results of ecological studies. It is based primarily on STATO, the statistical ontology.
+It is a work in progress.</dc:description>
+        <dc:subject xml:lang="en">Statistics, Ecology</dc:subject>
+        <dc:title>MOUSES: Modular Ontology for Unified Statistical Ecology Studies</dc:title>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.1 alpha</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic -->
+
+    <rdf:Description rdf:about="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic">
+        <rdfs:subClassOf rdf:resource="https://noellinetsafack-en.blogspot.com/ontologies/mouses.owl#Observations"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#CharacteristicQualifier -->
+
+    <rdf:Description rdf:about="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#CharacteristicQualifier">
+        <rdfs:subClassOf rdf:resource="https://noellinetsafack-en.blogspot.com/ontologies/mouses.owl#Observations"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Entity -->
+
+    <rdf:Description rdf:about="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Entity">
+        <rdfs:subClassOf rdf:resource="https://noellinetsafack-en.blogspot.com/ontologies/mouses.owl#Observations"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasuredValue -->
+
+    <rdf:Description rdf:about="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasuredValue">
+        <rdfs:subClassOf rdf:resource="https://noellinetsafack-en.blogspot.com/ontologies/mouses.owl#Observations"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Measurement -->
+
+    <rdf:Description rdf:about="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Measurement">
+        <rdfs:subClassOf rdf:resource="https://noellinetsafack-en.blogspot.com/ontologies/mouses.owl#Observations"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType -->
+
+    <rdf:Description rdf:about="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType">
+        <rdfs:subClassOf rdf:resource="https://noellinetsafack-en.blogspot.com/ontologies/mouses.owl#Observations"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Observation -->
+
+    <rdf:Description rdf:about="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Observation">
+        <rdfs:subClassOf rdf:resource="https://noellinetsafack-en.blogspot.com/ontologies/mouses.owl#Observations"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#ObservationCollection -->
+
+    <rdf:Description rdf:about="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#ObservationCollection">
+        <rdfs:subClassOf rdf:resource="https://noellinetsafack-en.blogspot.com/ontologies/mouses.owl#Observations"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Protocol -->
+
+    <rdf:Description rdf:about="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Protocol">
+        <rdfs:subClassOf rdf:resource="https://noellinetsafack-en.blogspot.com/ontologies/mouses.owl#Observations"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Standard -->
+
+    <rdf:Description rdf:about="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Standard">
+        <rdfs:subClassOf rdf:resource="https://noellinetsafack-en.blogspot.com/ontologies/mouses.owl#Observations"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#UnitConversion -->
+
+    <rdf:Description rdf:about="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#UnitConversion">
+        <rdfs:subClassOf rdf:resource="https://noellinetsafack-en.blogspot.com/ontologies/mouses.owl#Observations"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://identifiers.org/mamo/MAMO_0000003 -->
+
+    <owl:Class rdf:about="http://identifiers.org/mamo/MAMO_0000003">
+        <rdfs:subClassOf rdf:resource="https://noellinetsafack-en.blogspot.com/ontologies/mouses.owl#Modelling"/>
+    </owl:Class>
+    
+
+
+    <!-- http://identifiers.org/mamo/MAMO_0000010 -->
+
+    <owl:Class rdf:about="http://identifiers.org/mamo/MAMO_0000010">
+        <rdfs:subClassOf rdf:resource="https://noellinetsafack-en.blogspot.com/ontologies/mouses.owl#Modelling"/>
+    </owl:Class>
+    
+
+
+    <!-- http://identifiers.org/mamo/MAMO_0000017 -->
+
+    <owl:Class rdf:about="http://identifiers.org/mamo/MAMO_0000017">
+        <rdfs:subClassOf rdf:resource="https://noellinetsafack-en.blogspot.com/ontologies/mouses.owl#Modelling"/>
+    </owl:Class>
+    
+
+
+    <!-- http://identifiers.org/mamo/MAMO_0000018 -->
+
+    <owl:Class rdf:about="http://identifiers.org/mamo/MAMO_0000018">
+        <rdfs:subClassOf rdf:resource="https://noellinetsafack-en.blogspot.com/ontologies/mouses.owl#Modelling"/>
+    </owl:Class>
+    
+
+
+    <!-- http://identifiers.org/mamo/MAMO_0000027 -->
+
+    <owl:Class rdf:about="http://identifiers.org/mamo/MAMO_0000027">
+        <rdfs:subClassOf rdf:resource="https://noellinetsafack-en.blogspot.com/ontologies/mouses.owl#Modelling"/>
+    </owl:Class>
+    
+
+
+    <!-- http://identifiers.org/mamo/MAMO_0000031 -->
+
+    <owl:Class rdf:about="http://identifiers.org/mamo/MAMO_0000031">
+        <rdfs:subClassOf rdf:resource="https://noellinetsafack-en.blogspot.com/ontologies/mouses.owl#Modelling"/>
+    </owl:Class>
+    
+
+
+    <!-- http://identifiers.org/mamo/MAMO_0000032 -->
+
+    <owl:Class rdf:about="http://identifiers.org/mamo/MAMO_0000032">
+        <rdfs:subClassOf rdf:resource="https://noellinetsafack-en.blogspot.com/ontologies/mouses.owl#Modelling"/>
+    </owl:Class>
+    
+
+
+    <!-- http://identifiers.org/mamo/MAMO_0000037 -->
+
+    <owl:Class rdf:about="http://identifiers.org/mamo/MAMO_0000037">
+        <rdfs:subClassOf rdf:resource="https://noellinetsafack-en.blogspot.com/ontologies/mouses.owl#Modelling"/>
+    </owl:Class>
+    
+
+
+    <!-- http://identifiers.org/mamo/MAMO_0000054 -->
+
+    <owl:Class rdf:about="http://identifiers.org/mamo/MAMO_0000054">
+        <rdfs:subClassOf rdf:resource="https://noellinetsafack-en.blogspot.com/ontologies/mouses.owl#Modelling"/>
+    </owl:Class>
+    
+
+
+    <!-- http://identifiers.org/mamo/MAMO_0000055 -->
+
+    <owl:Class rdf:about="http://identifiers.org/mamo/MAMO_0000055">
+        <rdfs:subClassOf rdf:resource="https://noellinetsafack-en.blogspot.com/ontologies/mouses.owl#Modelling"/>
+    </owl:Class>
+    
+
+
+    <!-- http://identifiers.org/mamo/MAMO_0000058 -->
+
+    <owl:Class rdf:about="http://identifiers.org/mamo/MAMO_0000058">
+        <rdfs:subClassOf rdf:resource="https://noellinetsafack-en.blogspot.com/ontologies/mouses.owl#Modelling"/>
+    </owl:Class>
+    
+
+
+    <!-- http://identifiers.org/mamo/MAMO_0000061 -->
+
+    <owl:Class rdf:about="http://identifiers.org/mamo/MAMO_0000061">
+        <rdfs:subClassOf rdf:resource="https://noellinetsafack-en.blogspot.com/ontologies/mouses.owl#Modelling"/>
+    </owl:Class>
+    
+
+
+    <!-- http://identifiers.org/mamo/MAMO_0000062 -->
+
+    <owl:Class rdf:about="http://identifiers.org/mamo/MAMO_0000062">
+        <rdfs:subClassOf rdf:resource="https://noellinetsafack-en.blogspot.com/ontologies/mouses.owl#Modelling"/>
+    </owl:Class>
+    
+
+
+    <!-- http://identifiers.org/mamo/MAMO_0000084 -->
+
+    <owl:Class rdf:about="http://identifiers.org/mamo/MAMO_0000084">
+        <rdfs:subClassOf rdf:resource="https://noellinetsafack-en.blogspot.com/ontologies/mouses.owl#Modelling"/>
+    </owl:Class>
+    
+
+
+    <!-- http://identifiers.org/mamo/MAMO_0000085 -->
+
+    <owl:Class rdf:about="http://identifiers.org/mamo/MAMO_0000085">
+        <rdfs:subClassOf rdf:resource="https://noellinetsafack-en.blogspot.com/ontologies/mouses.owl#Modelling"/>
+    </owl:Class>
+    
+
+
+    <!-- http://identifiers.org/mamo/MAMO_0000086 -->
+
+    <owl:Class rdf:about="http://identifiers.org/mamo/MAMO_0000086">
+        <rdfs:subClassOf rdf:resource="https://noellinetsafack-en.blogspot.com/ontologies/mouses.owl#Modelling"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000001 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000001">
+        <rdfs:subClassOf rdf:resource="https://noellinetsafack-en.blogspot.com/ontologies/mouses.owl#Statistics"/>
+        <obo:BFO_0000179>entity</obo:BFO_0000179>
+        <obo:BFO_0000180>Entity</obo:BFO_0000180>
+        <obo:IAO_0000112 xml:lang="en">Julius Caesar</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">Verdi’s Requiem</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">the Second World War</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">your body mass index</obo:IAO_0000112>
+        <obo:IAO_0000116 xml:lang="en">BFO 2 Reference: In all areas of empirical inquiry we encounter general terms of two sorts. First are general terms which refer to universals or types:animaltuberculosissurgical procedurediseaseSecond, are general terms used to refer to groups of entities which instantiate a given universal but do not correspond to the extension of any subuniversal of that universal because there is nothing intrinsic to the entities in question by virtue of which they – and only they – are counted as belonging to the given group. Examples are: animal purchased by the Emperortuberculosis diagnosed on a Wednesdaysurgical procedure performed on a patient from Stockholmperson identified as candidate for clinical trial #2056-555person who is signatory of Form 656-PPVpainting by Leonardo da VinciSuch terms, which represent what are called ‘specializations’ in [81</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">Entity doesn&apos;t have a closure axiom because the subclasses don&apos;t necessarily exhaust all possibilites. For example Werner Ceusters &apos;portions of reality&apos; include 4 sorts, entities (as BFO construes them), universals, configurations, and relations. It is an open question as to whether entities as construed in BFO will at some point also include these other portions of reality. See, for example, &apos;How to track absolutely everything&apos; at http://www.referent-tracking.com/_RTU/papers/CeustersICbookRevised.pdf</obo:IAO_0000116>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+        <obo:IAO_0000600 xml:lang="en">An entity is anything that exists or has existed or will exist. (axiom label in BFO2 Reference: [001-001])</obo:IAO_0000600>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
+        <rdfs:label xml:lang="en">entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000002 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000002">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
+        <obo:BFO_0000179>continuant</obo:BFO_0000179>
+        <obo:BFO_0000180>Continuant</obo:BFO_0000180>
+        <obo:IAO_0000115 xml:lang="en">An entity that exists in full at any time in which it exists at all, persists through time while maintaining its identity and has no temporal parts.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">BFO 2 Reference: Continuant entities are entities which can be sliced to yield parts only along the spatial dimension, yielding for example the parts of your table which we call its legs, its top, its nails. ‘My desk stretches from the window to the door. It has spatial parts, and can be sliced (in space) in two. With respect to time, however, a thing is a continuant.’ [60, p. 240</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">Continuant doesn&apos;t have a closure axiom because the subclasses don&apos;t necessarily exhaust all possibilites. For example, in an expansion involving bringing in some of Ceuster&apos;s other portions of reality, questions are raised as to whether universals are continuants</obo:IAO_0000116>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+        <obo:IAO_0000600 xml:lang="en">A continuant is an entity that persists, endures, or continues to exist through time while maintaining its identity. (axiom label in BFO2 Reference: [008-002])</obo:IAO_0000600>
+        <obo:IAO_0000601 xml:lang="en">if b is a continuant and if, for some t, c has_continuant_part b at t, then c is a continuant. (axiom label in BFO2 Reference: [126-001])</obo:IAO_0000601>
+        <obo:IAO_0000601 xml:lang="en">if b is a continuant and if, for some t, cis continuant_part of b at t, then c is a continuant. (axiom label in BFO2 Reference: [009-002])</obo:IAO_0000601>
+        <obo:IAO_0000601 xml:lang="en">if b is a material entity, then there is some temporal interval (referred to below as a one-dimensional temporal region) during which b exists. (axiom label in BFO2 Reference: [011-002])</obo:IAO_0000601>
+        <obo:IAO_0000602>(forall (x y) (if (and (Continuant x) (exists (t) (continuantPartOfAt y x t))) (Continuant y))) // axiom label in BFO2 CLIF: [009-002] </obo:IAO_0000602>
+        <obo:IAO_0000602>(forall (x y) (if (and (Continuant x) (exists (t) (hasContinuantPartOfAt y x t))) (Continuant y))) // axiom label in BFO2 CLIF: [126-001] </obo:IAO_0000602>
+        <obo:IAO_0000602>(forall (x) (if (Continuant x) (Entity x))) // axiom label in BFO2 CLIF: [008-002] </obo:IAO_0000602>
+        <obo:IAO_0000602>(forall (x) (if (Material Entity x) (exists (t) (and (TemporalRegion t) (existsAt x t))))) // axiom label in BFO2 CLIF: [011-002] </obo:IAO_0000602>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
+        <rdfs:label xml:lang="en">continuant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000004 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000004">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
+        <obo:BFO_0000179>ic</obo:BFO_0000179>
+        <obo:BFO_0000180>IndependentContinuant</obo:BFO_0000180>
+        <obo:IAO_0000112 xml:lang="en">a chair</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">a heart</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">a leg</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">a molecule</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">a spatial region</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">an atom</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">an orchestra.</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">an organism</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">the bottom right portion of a human torso</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">the interior of your mouth</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">A continuant that is a bearer of quality and realizable entity entities, in which other entities inhere and which itself cannot inhere in anything.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">b is an independent continuant = Def. b is a continuant which is such that there is no c and no t such that b s-depends_on c at t. (axiom label in BFO2 Reference: [017-002])</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+        <obo:IAO_0000601 xml:lang="en">For any independent continuant b and any time t there is some spatial region r such that b is located_in r at t. (axiom label in BFO2 Reference: [134-001])</obo:IAO_0000601>
+        <obo:IAO_0000601 xml:lang="en">For every independent continuant b and time t during the region of time spanned by its life, there are entities which s-depends_on b during t. (axiom label in BFO2 Reference: [018-002])</obo:IAO_0000601>
+        <obo:IAO_0000602>(forall (x t) (if (IndependentContinuant x) (exists (r) (and (SpatialRegion r) (locatedInAt x r t))))) // axiom label in BFO2 CLIF: [134-001] </obo:IAO_0000602>
+        <obo:IAO_0000602>(forall (x t) (if (and (IndependentContinuant x) (existsAt x t)) (exists (y) (and (Entity y) (specificallyDependsOnAt y x t))))) // axiom label in BFO2 CLIF: [018-002] </obo:IAO_0000602>
+        <obo:IAO_0000602>(iff (IndependentContinuant a) (and (Continuant a) (not (exists (b t) (specificallyDependsOnAt a b t))))) // axiom label in BFO2 CLIF: [017-002] </obo:IAO_0000602>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
+        <rdfs:label xml:lang="en">independent continuant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000006 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000006">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000141"/>
+        <obo:BFO_0000179>s-region</obo:BFO_0000179>
+        <obo:BFO_0000180>SpatialRegion</obo:BFO_0000180>
+        <obo:IAO_0000116 xml:lang="en">BFO 2 Reference: Spatial regions do not participate in processes.</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">Spatial region doesn&apos;t have a closure axiom because the subclasses don&apos;t exhaust all possibilites. An example would be the union of a spatial point and a spatial line that doesn&apos;t overlap the point, or two spatial lines that intersect at a single point. In both cases the resultant spatial region is neither 0-dimensional, 1-dimensional, 2-dimensional, or 3-dimensional.</obo:IAO_0000116>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+        <obo:IAO_0000600 xml:lang="en">A spatial region is a continuant entity that is a continuant_part_of spaceR as defined relative to some frame R. (axiom label in BFO2 Reference: [035-001])</obo:IAO_0000600>
+        <obo:IAO_0000601 xml:lang="en">All continuant parts of spatial regions are spatial regions. (axiom label in BFO2 Reference: [036-001])</obo:IAO_0000601>
+        <obo:IAO_0000602>(forall (x y t) (if (and (SpatialRegion x) (continuantPartOfAt y x t)) (SpatialRegion y))) // axiom label in BFO2 CLIF: [036-001] </obo:IAO_0000602>
+        <obo:IAO_0000602>(forall (x) (if (SpatialRegion x) (Continuant x))) // axiom label in BFO2 CLIF: [035-001] </obo:IAO_0000602>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
+        <rdfs:label xml:lang="en">spatial region</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000009 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000009">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000006"/>
+        <obo:BFO_0000179>2d-s-region</obo:BFO_0000179>
+        <obo:BFO_0000180>TwoDimensionalSpatialRegion</obo:BFO_0000180>
+        <obo:IAO_0000112 xml:lang="en">an infinitely thin plane in space.</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">the surface of a sphere-shaped part of space</obo:IAO_0000112>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+        <obo:IAO_0000600 xml:lang="en">A two-dimensional spatial region is a spatial region that is of two dimensions. (axiom label in BFO2 Reference: [039-001])</obo:IAO_0000600>
+        <obo:IAO_0000602>(forall (x) (if (TwoDimensionalSpatialRegion x) (SpatialRegion x))) // axiom label in BFO2 CLIF: [039-001] </obo:IAO_0000602>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
+        <rdfs:label xml:lang="en">two-dimensional spatial region</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000018 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000018">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000006"/>
+        <obo:BFO_0000179>0d-s-region</obo:BFO_0000179>
+        <obo:BFO_0000180>ZeroDimensionalSpatialRegion</obo:BFO_0000180>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+        <obo:IAO_0000600 xml:lang="en">A zero-dimensional spatial region is a point in space. (axiom label in BFO2 Reference: [037-001])</obo:IAO_0000600>
+        <obo:IAO_0000602>(forall (x) (if (ZeroDimensionalSpatialRegion x) (SpatialRegion x))) // axiom label in BFO2 CLIF: [037-001] </obo:IAO_0000602>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
+        <rdfs:label xml:lang="en">zero-dimensional spatial region</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000026 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000026">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000006"/>
+        <obo:BFO_0000179>1d-s-region</obo:BFO_0000179>
+        <obo:BFO_0000180>OneDimensionalSpatialRegion</obo:BFO_0000180>
+        <obo:IAO_0000112 xml:lang="en">an edge of a cube-shaped portion of space.</obo:IAO_0000112>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+        <obo:IAO_0000600 xml:lang="en">A one-dimensional spatial region is a line or aggregate of lines stretching from one point in space to another. (axiom label in BFO2 Reference: [038-001])</obo:IAO_0000600>
+        <obo:IAO_0000602>(forall (x) (if (OneDimensionalSpatialRegion x) (SpatialRegion x))) // axiom label in BFO2 CLIF: [038-001] </obo:IAO_0000602>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
+        <rdfs:label xml:lang="en">one-dimensional spatial region</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000028 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000028">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000006"/>
+        <obo:BFO_0000179>3d-s-region</obo:BFO_0000179>
+        <obo:BFO_0000180>ThreeDimensionalSpatialRegion</obo:BFO_0000180>
+        <obo:IAO_0000112 xml:lang="en">a cube-shaped region of space</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">a sphere-shaped region of space,</obo:IAO_0000112>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+        <obo:IAO_0000600 xml:lang="en">A three-dimensional spatial region is a spatial region that is of three dimensions. (axiom label in BFO2 Reference: [040-001])</obo:IAO_0000600>
+        <obo:IAO_0000602>(forall (x) (if (ThreeDimensionalSpatialRegion x) (SpatialRegion x))) // axiom label in BFO2 CLIF: [040-001] </obo:IAO_0000602>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
+        <rdfs:label xml:lang="en">three-dimensional spatial region</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000141 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000141">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
+        <obo:BFO_0000179>immaterial</obo:BFO_0000179>
+        <obo:BFO_0000180>ImmaterialEntity</obo:BFO_0000180>
+        <obo:IAO_0000116 xml:lang="en">BFO 2 Reference: Immaterial entities are divided into two subgroups:boundaries and sites, which bound, or are demarcated in relation, to material entities, and which can thus change location, shape and size and as their material hosts move or change shape or size (for example: your nasal passage; the hold of a ship; the boundary of Wales (which moves with the rotation of the Earth) [38, 7, 10</obo:IAO_0000116>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
+        <rdfs:label xml:lang="en">immaterial entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000009 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000009">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <obo:IAO_0000111 xml:lang="en">datum label</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+        <obo:IAO_0000115 xml:lang="en">A label is a symbol that is part of some other datum and is used to either partially define  the denotation of that datum or to provide a means for identifying the datum as a member of the set of data with the same label</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">http://www.golovchenko.org/cgi-bin/wnsearch?q=label#4n</obo:IAO_0000116>
+        <obo:IAO_0000117 xml:lang="en">GROUP: IAO</obo:IAO_0000117>
+        <obo:IAO_0000232>9/22/11 BP: changed the rdfs:label for this class from &apos;label&apos; to &apos;datum label&apos; to convey that this class is not intended to cover all kinds of labels (stickers, radiolabels, etc.), and not even all kind of textual labels, but rather the kind of labels occuring in a datum. 
+</obo:IAO_0000232>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+        <rdfs:label xml:lang="en">datum label</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000027 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000027">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <obo:IAO_0000111 xml:lang="en">data item</obo:IAO_0000111>
+        <obo:IAO_0000112 xml:lang="en">Data items include counts of things, analyte concentrations, and statistical summaries.</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
+        <obo:IAO_0000115 xml:lang="en">a data item is an information content entity that is intended to be a truthful statement about something (modulo, e.g., measurement precision or other systematic errors) and is constructed/acquired by a method which reliably tends to produce (approximately) truthful statements.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">2/2/2009 Alan and Bjoern discussing FACS run output data. This is a data item because it is about the cell population. Each element records an event and is typically further composed a set of measurment data items that record the fluorescent intensity stimulated by one of the lasers.</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">2009-03-16: data item deliberatly ambiguous: we merged data set and datum to be one entity, not knowing how to define singular versus plural. So data item is more general than datum.</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">2009-03-16: removed datum as alternative term as datum specifically refers to singular form, and is thus not an exact synonym.</obo:IAO_0000116>
+        <obo:IAO_0000116>2014-03-31: See discussion at http://odontomachus.wordpress.com/2014/03/30/aboutness-objects-propositions/</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">JAR: datum     -- well, this will be very tricky to define, but maybe some 
+information-like stuff that might be put into a computer and that is 
+meant, by someone, to denote and/or to be interpreted by some 
+process... I would include lists, tables, sentences... I think I might 
+defer to Barry, or to Brian Cantwell Smith
+
+JAR: A data item is an approximately justified approximately true approximate belief</obo:IAO_0000116>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Chris Stoeckert</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Jonathan Rees</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="en">data</obo:IAO_0000118>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+        <rdfs:label xml:lang="en">data item</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000028 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000028">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <obo:IAO_0000111 xml:lang="en">symbol</obo:IAO_0000111>
+        <obo:IAO_0000112 xml:lang="en">a serial number such as &quot;12324X&quot;</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">a stop sign</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">a written proper name such as &quot;OBI&quot;</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
+        <obo:IAO_0000115 xml:lang="en">An information content entity that is a mark(s) or character(s) used as a conventional representation of another entity.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">20091104, MC: this needs work and will most probably change</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">2014-03-31: We would like to have a deeper analysis of &apos;mark&apos; and &apos;sign&apos; in the future (see https://github.com/information-artifact-ontology/IAO/issues/154).</obo:IAO_0000116>
+        <obo:IAO_0000117 xml:lang="en">PERSON: James A. Overton</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Jonathan Rees</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">based on Oxford English Dictionary</obo:IAO_0000119>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+        <rdfs:label xml:lang="en">symbol</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000030 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000030">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000031"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000111 xml:lang="en">information content entity</obo:IAO_0000111>
+        <obo:IAO_0000112 xml:lang="en">Examples of information content entites include journal articles, data, graphical layouts, and graphs.</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 xml:lang="en">A generically dependent continuant that is about some thing.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">2014-03-10: The use of &quot;thing&quot; is intended to be general enough to include universals and configurations (see https://groups.google.com/d/msg/information-ontology/GBxvYZCk1oc/-L6B5fSBBTQJ).</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">information_content_entity &apos;is_encoded_in&apos; some digital_entity in obi before split (040907). information_content_entity &apos;is_encoded_in&apos; some physical_document in obi before split (040907).
+
+Previous. An information content entity is a non-realizable information entity that &apos;is encoded in&apos; some digital or physical entity.</obo:IAO_0000116>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Chris Stoeckert</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">OBI_0000142</obo:IAO_0000119>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+        <rdfs:label xml:lang="en">information content entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000033 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000033">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000017"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 xml:lang="en">An information content entity whose concretizations indicate to their bearer how to realize them in a process.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">2009-03-16: provenance: a term realizable information entity was proposed for OBI (OBI_0000337) , edited by the PlanAndPlannedProcess branch. Original definition was  &quot;is the specification of a process that can be concretized and realized by an actor&quot; with alternative term  &quot;instruction&quot;.It has been subsequently moved to IAO where the objective for which the original term was defined was satisfied with the definitionof this, different, term.</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">2013-05-30 Alan Ruttenberg: What differentiates a directive information entity from an information concretization is that it can have concretizations that are either qualities or realizable entities. The concretizations that are realizable entities are created when an individual chooses to take up the direction, i.e. has the intention to (try to) realize it.</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">8/6/2009 Alan Ruttenberg: Changed label from &quot;information entity about a realizable&quot; after discussions at ICBO</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">Werner pushed back on calling it realizable information entity as it isn&apos;t realizable. However this name isn&apos;t right either. An example would be a recipe. The realizable entity would be a plan, but the information entity isn&apos;t about the plan, it, once concretized, *is* the plan. -Alan</obo:IAO_0000116>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Bjoern Peters</obo:IAO_0000117>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+        <rdfs:label xml:lang="en">directive information entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000300 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000300">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <obo:IAO_0000111 xml:lang="en">textual entity</obo:IAO_0000111>
+        <obo:IAO_0000112 xml:lang="en">Words, sentences, paragraphs, and the written (non-figure) parts of publications are all textual entities</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+        <obo:IAO_0000115 xml:lang="en">A textual entity is a part of a manifestation (FRBR sense), a generically dependent continuant whose concretizations are patterns of glyphs intended to be interpreted as words, formulas, etc.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">AR, (IAO call 2009-09-01): a document as a whole is not typically a textual entity, because it has pictures in it - rather there are parts of it that are textual entities. Examples: The title, paragraph 2 sentence 7, etc.</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">MC, 2009-09-14 (following IAO call 2009-09-01): textual entities live at the FRBR (http://en.wikipedia.org/wiki/Functional_Requirements_for_Bibliographic_Records) manifestation level. Everything is significant: line break, pdf and html versions of same document are different textual entities.</obo:IAO_0000116>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Lawrence Hunter</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="en">text</obo:IAO_0000118>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+        <rdfs:label xml:lang="en">textual entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000308 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000308">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <obo:IAO_0000111 xml:lang="en">figure</obo:IAO_0000111>
+        <obo:IAO_0000112 xml:lang="en">Any picture, diagram or table</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115 xml:lang="en">An information content entity consisting of a two dimensional arrangement of information content entities such that the arrangement itself is about something.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Lawrence Hunter</obo:IAO_0000117>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+        <rdfs:label xml:lang="en">figure</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000310 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000310">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <obo:IAO_0000111 xml:lang="en">document</obo:IAO_0000111>
+        <obo:IAO_0000112 xml:lang="en">A journal article, patent application, laboratory notebook, or a book</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115 xml:lang="en">A collection of information content entities intended to be understood together as a whole</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Lawrence Hunter</obo:IAO_0000117>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+        <rdfs:label xml:lang="en">document</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000578 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000578">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000577"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000219"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000579"/>
+                    </owl:Restriction>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000112 xml:lang="en">The sentence &quot;The article has Pubmed ID 12345.&quot; contains a CRID that has two parts: one part is the CRID symbol, which is &apos;12345&apos;; the other part denotes the CRID registry, which is Pubmed.</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115 xml:lang="en">An information content entity that consists of a CRID symbol and additional information about the CRID registry to which it belongs.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">2014-05-05: In defining this term we take no position on what the CRID denotes. In particular do not assume it denotes a *record* in the CRID registry (since the registry might not have &apos;records&apos;).</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">Alan, IAO call 20101124: potentially the CRID denotes the instance it was associated with during creation. 
+</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">Note, IAO call 20101124: URIs are not always CRID, as not centrally registered. We acknowledge that CRID is a subset of a larger identifier class, but this subset fulfills our current needs. OBI PURLs are CRID as they are registered with OCLC. UPCs (Universal Product Codes from AC Nielsen)are not CRID as they are not centrally registered.</obo:IAO_0000116>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Bill Hogan</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Bjoern Peters</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Melanie Courtot</obo:IAO_0000117>
+        <obo:IAO_0000118>CRID</obo:IAO_0000118>
+        <obo:IAO_0000119 xml:lang="en">Original proposal from Bjoern, discussions at IAO calls</obo:IAO_0000119>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+        <rdfs:label xml:lang="en">centrally registered identifier</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0001909 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001909">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000124"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000338"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000111>conclusion based on data</obo:IAO_0000111>
+        <obo:IAO_0000112>The conclusion that a gene is upregulated in a tissue sample based on the band intensity in a western blot. The conclusion that a patient has a infection based on measurement of an elevated body temperature and reported headache. The conclusion that there were problems in an investigation because data from PCR and microarray are conflicting.
+The following are NOT conclusions based on data: data themselves; results from pure mathematics, e.g. &quot;13 is prime&quot;.</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115>An information content entity that is inferred from data.</obo:IAO_0000115>
+        <obo:IAO_0000116>In the Philly 2013 workshop, we recognized the limitations of &quot;conclusion textual entity&quot;, and we introduced this as more general. The need for the &apos;textual entity&apos; term going forward is up for future debate. </obo:IAO_0000116>
+        <obo:IAO_0000117>Group:2013 Philly Workshop group</obo:IAO_0000117>
+        <obo:IAO_0000119>Group:2013 Philly Workshop group</obo:IAO_0000119>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+        <rdfs:label>conclusion based on data</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0001933 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001933">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <obo:IAO_0000111>value specification</obo:IAO_0000111>
+        <obo:IAO_0000112>The value of &apos;positive&apos; in a classification scheme of &quot;positive or negative&quot;; the value of &apos;20g&apos; on the quantitative scale of mass.</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115>An information content entity that specifies a value within a classification scheme or on a quantitative scale.</obo:IAO_0000115>
+        <obo:IAO_0000116>This term is currently a descendant of &apos;information content entity&apos;, which requires that it &apos;is about&apos; something. A value specification of &apos;20g&apos; for a measurement data item of the mass of a particular mouse &apos;is about&apos; the mass of that mouse. However there are cases where a value specification is not clearly about any particular. In the future we may change &apos;value specification&apos; to remove the &apos;is about&apos; requirement.</obo:IAO_0000116>
+        <obo:IAO_0000117>PERSON:Bjoern Peters</obo:IAO_0000117>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+        <rdfs:label>value specification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000002 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000002">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <obo:IAO_0000112 xml:lang="en">digital images may be stored as electronic file in TIFF format on mass memory storage devices</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 xml:lang="en">an electronic file is an information content entity which conforms to a specification or format and which is meant to hold data and information in digital form, accessible to software agents</obo:IAO_0000115>
+        <obo:IAO_0000117>Alejandra Gonzalez-Beltran</obo:IAO_0000117>
+        <obo:IAO_0000117>Orlaith Burke</obo:IAO_0000117>
+        <obo:IAO_0000117>Philippe Rocca-Serra</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">STATO</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">digital file</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000010 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000010">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000006"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115>In geometry, a coordinate system is a system which uses one or more numbers, or coordinates, to uniquely determine the position of a point or other geometric element on a manifold such as Euclidean space.</obo:IAO_0000115>
+        <obo:IAO_0000117>Alejandra Gonzalez-Beltran</obo:IAO_0000117>
+        <obo:IAO_0000117>Orlaith Burke</obo:IAO_0000117>
+        <obo:IAO_0000117>Philippe Rocca-Serra</obo:IAO_0000117>
+        <obo:IAO_0000119>http://en.wikipedia.org/wiki/Coordinate_system</obo:IAO_0000119>
+        <obo:STATO_0000032></obo:STATO_0000032>
+        <rdfs:label xml:lang="en">coordinate system</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000065 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000065">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/STATO_0000129"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 xml:lang="en">In statistics, a statement that can be tested.[wolfram alpha]</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Alejandra Gonzalez-Beltran</obo:IAO_0000117>
+        <obo:IAO_0000117>Orlaith Burke</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">Philippe Rocca-Serra</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">STATO</obo:IAO_0000119>
+        <obo:IAO_0000119 xml:lang="en">http://mathworld.wolfram.com/Hypothesis.html</obo:IAO_0000119>
+        <obo:STATO_0000032 xml:lang="en"></obo:STATO_0000032>
+        <rdfs:label xml:lang="en">hypothesis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000140 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000140">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/STATO_0000252"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 xml:lang="en">a contigency table is a data item which displays the (multivariate) frequency distribution of the possible values of categorical variables.
+The first row of the table corresponds to categories of one categorical variable, the first column of the table corresponds to categories of the other categorical variable, the cells corresponding to each combination of categories is filled with the observed occurences in the sample being considered.
+The table also contains marginal total (marginal sums) and grand total of the occurences
+
+The term contingency table was first used by Karl Pearson in &quot;On the Theory of Contingency and Its Relation to Association and Normal Correlation&quot;, part of the Drapers&apos; Company Research Memoirs Biometric Series I published in 1904.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Alejandra Gonzalez-Beltran</obo:IAO_0000117>
+        <obo:IAO_0000117>Orlaith Burke</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">Philippe Rocca-Serra</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">STATO, adapted from wikipedia (http://en.wikipedia.org/wiki/Contingency_table)</obo:IAO_0000119>
+        <obo:STATO_0000032 xml:lang="en"></obo:STATO_0000032>
+        <obo:STATO_0000041 xml:lang="en">xtabs(formula = ~., data = parent.frame(), subset, sparse = FALSE,
+      na.action, exclude = c(NA, NaN), drop.unused.levels = FALSE)
+
+http://stat.ethz.ch/R-manual/R-patched/library/stats/html/xtabs.html
+
+flat contingency tables:
+
+ftable(x, ...)
+
+http://stat.ethz.ch/R-manual/R-patched/library/stats/html/ftable.html</obo:STATO_0000041>
+        <rdfs:label xml:lang="en">contingency table</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000161 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000161">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/STATO_0000205"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/STATO_0000028"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/STATO_0000205"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/STATO_0000029"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 xml:lang="en">variable distribution is data item which denotes the spatial resolution of data point making up a variable. variable distribution may be compared to a known probability distribution using goodness of fit test or plotting a quantile-quantile plot for visual assessment of the fit.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">TODO: Probably need to drop it</obo:IAO_0000116>
+        <obo:IAO_0000117 xml:lang="en">Alejandra Gonzalez-Beltran</obo:IAO_0000117>
+        <obo:IAO_0000117>Orlaith Burke</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">Philippe Rocca-Serra</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">STATO</obo:IAO_0000119>
+        <obo:STATO_0000032 xml:lang="en">data distribution</obo:STATO_0000032>
+        <rdfs:label xml:lang="en">data distribution</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000225 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000225">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/STATO_0000205"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/STATO_0000068"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/STATO_0000205"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/STATO_0000113"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/STATO_0000205"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/STATO_0000178"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/STATO_0000205"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/STATO_0000230"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/STATO_0000205"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/STATO_0000237"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/STATO_0000205"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/STATO_0000435"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/STATO_0000205"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/STATO_0000436"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/STATO_0000205"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/STATO_0000500"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 xml:lang="en">A probability distribution is a information content entity that specifies the probability of the value of a random variable.
+
+For a discrete random variable, a mathematical formula that gives the probability of each value of the variable.
+
+For a continuous random variable, a curve described by a mathematical formula which specifies, by way of areas under the curve, the probability that the variable falls within a particular interval.</obo:IAO_0000115>
+        <obo:IAO_0000117>Alejandra Gonzalez-Beltran</obo:IAO_0000117>
+        <obo:IAO_0000117>Orlaith Burke</obo:IAO_0000117>
+        <obo:IAO_0000117>Philippe Rocca-Serra</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">probability distribution</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000323 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000323">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/STATO_0000322"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/STATO_0000290"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000112 xml:lang="en">[1,0,0]</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">a contrast weight matrix is a information content entity which holds a set of contrast weight, coefficient used in a weighting sum of means defining a contrast</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Alejandra Gonzalez-Beltran</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">Camille Maumet</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">Orlaith Burke</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">Philippe Rocca-Serra</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">Tom Nichols</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">STATO</obo:IAO_0000119>
+        <obo:STATO_0000032 xml:lang="en">contrast weights</obo:STATO_0000032>
+        <rdfs:label xml:lang="en">contrast weight matrix</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000433 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000433">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0200000"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0500005"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/STATO_0000053"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000175"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 xml:lang="en">McNemar&apos;s test is a statistical test used on paired nominal data. It is applied to 2 × 2 contingency tables with a dichotomous trait, with matched pairs of subjects, to determine whether the row and column marginal frequencies are equal (that is, whether there is &quot;marginal homogeneity&quot;). It is named after Quinn McNemar, who introduced it in 1947.
+An application of the test in genetics is the transmission disequilibrium test for detecting linkage disequilibrium</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Philippe Rocca-Serra</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="en">McNemar&apos;s Chi-squared Test for Count Data</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">test of the marginal homogeneity of a contingency table</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">within-subjects chi-squared test</obo:IAO_0000118>
+        <obo:IAO_0000119 xml:lang="en">adapted from Wikipedia:
+https://en.wikipedia.org/wiki/McNemar%27s_test
+
+last accessed: May 2016</obo:IAO_0000119>
+        <obo:IAO_0000119 xml:lang="en">https://www.ncbi.nlm.nih.gov/pubmed/20254758</obo:IAO_0000119>
+        <obo:STATO_0000041 xml:lang="en">mcnemar.test(x, y = NULL, correct = TRUE)
+
+from:
+
+https://stat.ethz.ch/R-manual/R-devel/library/stats/html/mcnemar.test.html</obo:STATO_0000041>
+        <rdfs:label xml:lang="en">McNemar test</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000493 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000493">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0001305"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115>a genotype matrix is a kind of genomic relationship matrix in the rawest of form and which simply corresponds to a matrix of individuals genotype for a given set of markers or genomic positions. Columns are snps or markers, Rows are individuals. Each column/row cell contains a genotype expressed as, in the genome is diploid, as a pair of characters chosen from ATGC where the dominant variant is uppercased and the recessive variant is lower cased.</obo:IAO_0000115>
+        <obo:IAO_0000117>Philippe Rocca-Serra</obo:IAO_0000117>
+        <obo:IAO_0000119>http://articles.extension.org/pages/68019/genomic-relationships-and-gblup</obo:IAO_0000119>
+        <obo:STATO_0000032></obo:STATO_0000032>
+        <obo:STATO_0000041></obo:STATO_0000041>
+        <rdfs:label>genotype matrix</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000494 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000494">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0001305"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/STATO_0000063"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/STATO_0000557"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/STATO_0000493"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 xml:lang="en">the MAF matrix is a genomic relationship matrix which is obtained from the genotype matrix by counting the number of minor alleles at each locus</obo:IAO_0000115>
+        <obo:IAO_0000117>Philippe Rocca-Serra</obo:IAO_0000117>
+        <obo:IAO_0000119>http://articles.extension.org/pages/68019/genomic-relationships-and-gblup</obo:IAO_0000119>
+        <obo:STATO_0000032>MAF matrix</obo:STATO_0000032>
+        <obo:STATO_0000032>gene content matrix</obo:STATO_0000032>
+        <obo:STATO_0000032>matrix of minor allele count</obo:STATO_0000032>
+        <rdfs:label>MAF matrix</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000495 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000495">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/STATO_0000557"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/STATO_0000494"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115>the M matrix is a genomic relationship matrix which is obtained by subtracting 1 to every value of the MAF matrix (gene content matrix). The values of the M matrix are only -1, 0 or 1 and makes computation easier.
+M = MAF-1</obo:IAO_0000115>
+        <obo:IAO_0000117>Philippe Rocca-Serra</obo:IAO_0000117>
+        <obo:IAO_0000119>http://articles.extension.org/pages/68019/genomic-relationships-and-gblup
+
+Efficient Methods to Compute Genomic Predictions. J. Dairy Sci. 91:4414-4423. 2008
+P. M. VanRaden.
+
+10.31 68/jds.2007-0980</obo:IAO_0000119>
+        <obo:STATO_0000032>deviation of 1 from the gene content matrix</obo:STATO_0000032>
+        <obo:STATO_0000041>&gt;M = MAF-1</obo:STATO_0000041>
+        <rdfs:label>M matrix</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000496 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000496">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/STATO_0000557"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/STATO_0000494"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115>P matrix is a kind of genomic relationship matrix which contains allele frequencies expressed as a difference from 0.5 and multiplied by 2.</obo:IAO_0000115>
+        <obo:IAO_0000117>Philippe Rocca-Serra</obo:IAO_0000117>
+        <obo:IAO_0000119>http://articles.extension.org/pages/68019/genomic-relationships-and-gblup
+
+Efficient Methods to Compute Genomic Predictions. J. Dairy Sci. 91:4414-4423. 2008
+P. M. VanRaden.
+
+10.31 68/jds.2007-0980</obo:IAO_0000119>
+        <obo:STATO_0000032></obo:STATO_0000032>
+        <obo:STATO_0000041></obo:STATO_0000041>
+        <rdfs:label>P matrix</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000497 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000497">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115>the Z-matrix is a genomic relationship matrix which is obtained by substracted the M matrix with the P matrix. It is also known as the incidence matrix for the markers.</obo:IAO_0000115>
+        <obo:IAO_0000117>Philippe Rocca-Serra</obo:IAO_0000117>
+        <obo:IAO_0000119>http://articles.extension.org/pages/68019/genomic-relationships-and-gblup
+
+Efficient Methods to Compute Genomic Predictions. J. Dairy Sci. 91:4414-4423. 2008
+P. M. VanRaden.
+
+10.31 68/jds.2007-0980</obo:IAO_0000119>
+        <obo:STATO_0000032>incidence matrix for genotyping markers</obo:STATO_0000032>
+        <obo:STATO_0000041></obo:STATO_0000041>
+        <rdfs:label>Z matrix</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000525 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000525">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 xml:lang="en">a covariance matrix is a square matrix that contains the variances and covariances associated with several variables. The diagonal elements of the matrix contain the variances of the variables and the off-diagonal elements contain the covariances between all possible pairs of variables.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Philippe Rocca-Serra</obo:IAO_0000117>
+        <obo:IAO_0000119></obo:IAO_0000119>
+        <obo:STATO_0000032 xml:lang="en">dispersion matrix</obo:STATO_0000032>
+        <obo:STATO_0000032 xml:lang="en">variance-covariance matrix</obo:STATO_0000032>
+        <obo:STATO_0000041></obo:STATO_0000041>
+        <rdfs:label xml:lang="en">covariance matrix</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000526 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000526">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <obo:IAO_0000112>https://www.r-bloggers.com/setup-up-the-inverse-of-additive-relationship-matrix-in-r/</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115>the numerator relationship matrix is the matrix of *expected* additive genetic relationships between individuals. This matrix was originally used by Henderson (Henderson, C.R. 1976. A simple method for computing the inverse of a numerator relationship matrix used in prediction of breeding values. Biometrics 32:69-83.) to account for covariances between random effects, and therefore to use information from relatives in estimation of breeding value. Among the properties of the NRM matrix (also known as the A matrix), it is symmetric, the diagonal value correspond to 1+ the inbreeding coefficient for an individual.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Philippe Rocca-Serra</obo:IAO_0000117>
+        <obo:IAO_0000118>A matrix</obo:IAO_0000118>
+        <obo:IAO_0000119>adapted from:
+https://jvanderw.une.edu.au/Genetic_properties_of_the_animal_model.pdf
+and from:
+Henderson, C.R. 1976. A simple method for computing the inverse of a numerator relationship matrix used in prediction of breeding values. Biometrics 32:69-83.
+https://doi.org/10.2307/2529339</obo:IAO_0000119>
+        <obo:STATO_0000032 xml:lang="en">NRM</obo:STATO_0000032>
+        <obo:STATO_0000041>https://rdrr.io/cran/sommer/man/A.mat.html</obo:STATO_0000041>
+        <rdfs:label xml:lang="en">numerator relationship matrix</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000528 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000528">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 xml:lang="en">A matrix of relationships among a group of individuals, which can be used to predict breeding values, to manage inbreeding and in genetic conservation. It can be calculated from the pedigree, but it is also possible to calculate the relationship matrix from genotypes at genetic markers such as single-nucleotide polymorphisms (SNPs). Elements of the genomic relationship matrix are estimates of the realized proportion of the genome that two individuals share, whereas the pedigree-derived relationship matrix is the expectation of this proportion.</obo:IAO_0000115>
+        <obo:IAO_0000117>Philippe Rocca-Serra</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">https://doi.org/10.3168/jds.2007-0980</obo:IAO_0000119>
+        <obo:IAO_0000119 xml:lang="en">https://www.ncbi.nlm.nih.gov/pubmed/22059574</obo:IAO_0000119>
+        <obo:STATO_0000032 xml:lang="en">realized genomic relationship matrix</obo:STATO_0000032>
+        <obo:STATO_0000032>relationship matrix</obo:STATO_0000032>
+        <obo:STATO_0000041>https://cran.r-project.org/web/packages/snpReady/snpReady.pdf</obo:STATO_0000041>
+        <rdfs:label>G matrix</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://noellinetsafack-en.blogspot.com/ontologies/mouses.owl#Modelling -->
+
+    <owl:Class rdf:about="https://noellinetsafack-en.blogspot.com/ontologies/mouses.owl#Modelling"/>
+    
+
+
+    <!-- https://noellinetsafack-en.blogspot.com/ontologies/mouses.owl#Observations -->
+
+    <owl:Class rdf:about="https://noellinetsafack-en.blogspot.com/ontologies/mouses.owl#Observations"/>
+    
+
+
+    <!-- https://noellinetsafack-en.blogspot.com/ontologies/mouses.owl#Statistics -->
+
+    <owl:Class rdf:about="https://noellinetsafack-en.blogspot.com/ontologies/mouses.owl#Statistics"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
